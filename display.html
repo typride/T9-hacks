@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Zoey</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="zoey.css">
+	<script
+  	src="https://code.jquery.com/jquery-3.1.1.js"
+  	integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  	crossorigin="anonymous"></script>
+  	<script src="https://use.fontawesome.com/68532f7e46.js"></script>
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+</head>
+<body class="displayPage">
+	<script type="text/javascript" src="js.js"></script>
+	<header class="mainheader">
+		<div class="icon">
+			<a href="index.html"><img src="assets/simpleicon.png"></a>
+		</div>
+	</header>
+	<div class="displayContent">
+	<div class="tester" id="tester">
+		<!-- <canvas id="myCanvas" width="400" height="600"> -->
+		<img class="firstTestImage" id="firstTestImage" src="test1.jpg">
+	</div>
+	<div class="displayText">
+		<p>Thank you for participating. Enjoy your art!</p>
+<!-- 		<p>Download</p>
+		<p>Share</p> -->
+		<p class="restart"><a class="restart" href="survey.html">Restart</a></p>
+	</div>
+	</div>
+	<script type="text/javascript" src="js.js"></script>
+	<script> 
+		$( document ).ready(function(){
+			//var user = window.localStorage.getItem('user');
+			var letEI = window.localStorage.getItem('letEI');
+			var letSN = window.localStorage.getItem('letSN');
+			var letTF = window.localStorage.getItem('letTF');
+			var letJP = window.localStorage.getItem('letJP');
+			//console.log(user.EI);
+			console.log(letEI);
+			console.log(letSN);
+			console.log(letTF);
+			console.log(letJP);
+
+			var filename = letEI+letSN+letTF+letJP;
+			filenameLay1 = pictureGetter("layer-1", filename);
+			filenameLay2 = pictureGetter("layer-2", filename);
+
+			replaceImage("firstTestImage", filenameLay1);
+
+    		replaceBackgroundImage("tester",filenameLay2);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+
+/*---------------------------------------------------------------*/
+// Colors
+/*$color-1: #2ecc71;*/
+/*$color-2: #3498db;*/
+/*$color-3: #f1c40f;*/
+/*$color-4: #e74c3c;*/
+body{
+	background-color: white;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+.home{
+	background-color: #779298;
+}
+.survey{
+	color: black;
+}
+.mainevileye{
+	display: flex;
+	display:-webkit-flex;
+	width: 75%;
+	align-self: center;
+	justify-content: center;
+}
+
+.mainpageimage{
+	display: flex;
+	display: -webkit-flex;
+	/*width: 90%;*/
+	/*width: 20%;*/
+	justify-content: center;
+}
+.begin{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+}
+
+a:link{
+	color:#ffffff;
+	text-decoration: none;
+}
+a:visited{
+	color:#ffffff;	
+}
+a:hover{
+	text-decoration: none;
+	color: lightgrey;
+}
+a:active{
+	color: white;
+}
+
+.question{
+	padding-top: 80px;
+	padding-left: 100px; /*here */
+	padding-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+/* Customize the label (the container) */
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 75px;  /*here */
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.radiobtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  /*padding: 200px;*/
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .radiobtn {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .radiobtn {
+  background-color: #669999;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .radiobtn:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .radiobtn:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  /*border-radius: 50%;*/
+  background: #669999;
+}
+
+
+.answer{
+	display: flex;
+	display: -webkit-flex;
+	padding-left: 120px;
+}
+
+#enter{
+	display: flex;
+	display: -webkit-flex;
+	border: none;
+	background-color: #779298;
+	padding: 15px 32px;
+	font-family: 'Montserrat', sans-serif;
+	/*font-weight: bold;*/
+	color: white;
+	font-size: 20px;
+
+	/*padding-left: 75px;*/	
+}
+
+.enterButton{
+	/*padding-left: 75px;*/
+	padding-top: 75px;
+	padding-bottom: 75px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+}
+
+.icon{
+	display: flex;
+	display: -webkit-flex;
+	padding: 10px ;
+
+}
+
+.displayPage{
+	background-color: white;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.tester{
+	width: 400px;
+	height: 600px;
+	display: flex;
+	display: -webkit-flex;
+	/*background-width: 10%;*/
+	/*background: url("test1.jpg");*/
+	/*background-image: url("58.jpg");*/
+	background-blend-mode: lighten;
+	/*justify-content: flex-end;*/
+
+}
+
+.firstTestImage{
+	width: 100%;
+	/*background-color: red ;*/
+	/*background-blend-mode: lighten;*/
+	mix-blend-mode: lighten;
+	display: flex;
+	display: -webkit-flex;
+	/*justify-content: flex-end;*/
+	/*padding: 0px;
+	border: 0px;
+*/
+}
+.welcome{
+	display: flex;
+	display: -webkit-flex;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	justify-content: flex-end;
+}
+.displayContent{
+	display: flex;
+	display: -webkit-flex;
+	display: inline-flex;
+}
+
+.displayText{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	padding-left: 150px;
+	font-size: 22px;
+}
+
+.restart{
+	display: flex;
+	display: -webkit-flex;
+	color: black;
+}
+a.restart{
+	display: flex;
+	display: -webkit-flex;
+	color: black;
+}
+
+a.restart:link{
+	color:black;
+	text-decoration: none;
+}
+a.restart:visited{
+	color:black;	
+}
+a.restart:hover{
+	text-decoration: none;
+	color: lightgrey;
+}
+a.restart:active{
+	color: lightgrey;
+}
+
+/*#myCanvas{
+	background-image: url("test1.jpg");
+	mix-blend-mode: lighten;
+}*/

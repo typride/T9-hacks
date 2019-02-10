@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Zoey</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="zoey.css">
+	<script
+  	src="https://code.jquery.com/jquery-3.1.1.js"
+  	integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  	crossorigin="anonymous"></script>
+  	<script src="https://use.fontawesome.com/68532f7e46.js"></script>
+</head>
+<body class="survey">
+	<header class="mainheader">
+		<div class="icon">
+			<a href="index.html"><img src="assets/simpleicon.png"></a>
+		</div>
+	</header>
+	<!-- extroverted vs introverted -->
+	<h3 class="question">You find it easy to stay relaxed even when there is some pressure.</h3>
+	<div class="answer">
+	<label class="container">  
+	  <input type="radio" name="question1" value=2>
+	  <span class="radiobtn"></span>
+	</label>
+
+	<label class="container" >  
+	  <input type="radio" name="question1" value=1>
+	  <span class="radiobtn"></span>
+	</label>
+
+<!-- 	<label class="container" >  
+	  <input type="radio" name="question1" id="question1.3" value="neutral">
+	  <span class="radiobtn"></span>
+	</label>
+ -->
+	<label class="container" >  
+	  <input type="radio" name="question1" value=-1>
+	  <span class="radiobtn"></span>
+	</label>
+	<label class="container" >
+	  <input type="radio" name="question1" value=-2>  
+	  <span class="radiobtn"></span>
+	</label>
+	</div>
+
+	<!-- intution vs sensing -->
+	<h3 class="question">I remember events as snapshots of what actually happened.</h3>
+	<div class="answer">
+	<label class="container">  
+	  <input type="radio" name="question2"  value="2">
+	  <span class="radiobtn"></span>
+	</label>
+
+	<label class="container" >  
+	  <input type="radio" name="question2"  value="1">
+	  <span class="radiobtn"></span>
+	</label>
+
+<!-- 	<label class="container" >  
+	  <input type="radio" name="question2" id="question2.3" value="neutral">
+	  <span class="radiobtn"></span>
+	</label>
+ -->
+	<label class="container" >  
+	  <input type="radio" name="question2"  value="-1">
+	  <span class="radiobtn"></span>
+	</label>
+	<label class="container" >
+	  <input type="radio" name="question2"  value="-2">  
+	  <span class="radiobtn"></span>
+	</label>
+	</div>
+
+	<!-- thinking vs feeling -->
+
+	<h3 class="question">I make decisions with my heart and want to be compassionate.</h3>
+	<div class="answer">
+	<label class="container">  
+	  <input type="radio" name="question3" value="2">
+	  <span class="radiobtn"></span>
+	</label>
+
+	<label class="container" >  
+	  <input type="radio" name="question3"  value="1">
+	  <span class="radiobtn"></span>
+	</label>
+
+<!-- 	<label class="container" >  
+	  <input type="radio" name="question3" id="question3.3" value="neutral">
+	  <span class="radiobtn"></span>
+	</label> -->
+
+	<label class="container" >  
+	  <input type="radio" name="question3" value="-1">
+	  <span class="radiobtn"></span>
+	</label>
+	<label class="container" >
+	  <input type="radio" name="question3" value="-2">  
+	  <span class="radiobtn"></span>
+	</label>
+	</div>
+
+	<!-- judging vs preceiving -->
+		<h3 class="question">I like to have things decided.</h3>
+	<div class="answer">
+	<label class="container">  
+	  <input type="radio" name="question4"  value="2">
+	  <span class="radiobtn"></span>
+	</label>
+
+	<label class="container" >  
+	  <input type="radio" name="question4" value="1">
+	  <span class="radiobtn"></span>
+	</label>
+
+<!-- 	<label class="container" >  
+	  <input type="radio" name="question4" id="question4.3" value="neutral">
+	  <span class="radiobtn"></span>
+	</label>
+ -->
+	<label class="container" >  
+	  <input type="radio" name="question4" value="-1">
+	  <span class="radiobtn"></span>
+	</label>
+	<label class="container" >
+	  <input type="radio" name="question4" value="-2">  
+	  <span class="radiobtn"></span>
+	</label>
+	</div>
+
+	<div class="enterButton">
+	<a href="display.html"><button type="button" id="enter" onclick="handleClick()">Enter</button></a>
+	<!-- <button type="button" id="enter" onclick="handleClick()">Enter</button> -->
+	</div>
+<script type="text/javascript" src="js.js"></script>
+
+</body> 
+</html>
