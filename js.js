@@ -1,4 +1,4 @@
-
+#Each user is considered to be a person 
 class Person{
     constructor(EI, SN, TF, JP){
         this.EI=EI;
@@ -19,7 +19,7 @@ imgArray[0].src = 'images/layer-1/9.jpg';
         imgArray[i] = new Image();
         imageArry[i].src = imageSrc;
 }*/
-
+*handleClick awaits for button click on submit page for questionnaire*
 function handleClick() {
     console.log("Button clicked!");
 
